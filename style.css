@@ -81,3 +81,66 @@ a.button {
 a.button:hover {
     background-color: #0056b3;
 }
+
+/* Hamburger Button */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 1001;
+  user-select: none;
+}
+
+/* Slide-out Menu */
+.slide-menu {
+  position: fixed;
+  top: -100%; /* start hidden above */
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  color: white;
+  overflow-y: auto;
+  transition: top 0.5s ease;
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+/* Menu active */
+.slide-menu.active {
+  top: 0;
+}
+
+/* Close button */
+.slide-menu .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Menu links */
+.slide-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.slide-menu ul li {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.slide-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.slide-menu ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
